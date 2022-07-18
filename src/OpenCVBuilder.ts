@@ -101,7 +101,6 @@ export class OpenCVBuilder {
 
     try {
       await utils.requireGit()
-      await utils.requireCmake()
       await new SetupOpencv(this).start()
     } catch (err) {
       if (err.toString)
